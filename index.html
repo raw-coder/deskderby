@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Desk Derby Privacy</title>
+<meta name="description" content="Privacy policy and support for Desk Derby, tabletop soccer with online play.">
+<style>
+  :root {
+    --bg: #f3efe4; --paper: #fffbf2; --ink: #1d221b; --muted: #5a6152; --line: #ddd5bd;
+    --accent: #c2412f; --plastic: #2f7a4c; --lcd: #ff5a4d;
+    --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15140f; --paper: #1f1d16; --ink: #f1ecdb; --muted: #b3ad98; --line: #37332a;
+      --accent: #ff8a7d; --plastic: #4fae73; --lcd: #ff5a4d; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15140f; --paper: #1f1d16; --ink: #f1ecdb; --muted: #b3ad98; --line: #37332a;
+    --accent: #ff8a7d; --plastic: #4fae73; --lcd: #ff5a4d; color-scheme: dark;
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 40px 16px 56px; display: flex; flex-direction: column; gap: 28px; }
+  header { background: var(--paper); border: 1px solid var(--line); border-top: 6px solid var(--plastic); border-radius: 10px; padding: 22px 20px; }
+  .kicker { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 6px 0 8px; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .summary { background: var(--paper); border-left: 4px solid var(--plastic); padding: 16px 20px; border-radius: 6px; }
+  .summary p { margin: 0; }
+  section { display: flex; flex-direction: column; gap: 8px; }
+  h2 { font-size: 20px; margin: 4px 0 0; text-wrap: balance; }
+  p, li { max-width: 65ch; margin: 0; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+  table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+  tr:last-child td { border-bottom: 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--plastic); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Desk Derby</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective November 11, 2026</p>
+  </header>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Desk Derby has no ads and no tracking. Your settings stay on your device. Online matches and leaderboards run through Apple's Game Center, so the players you meet see your Game Center nickname. If you agree to anonymous statistics, the app sends us numbers about matches, the tips and connection quality. Say no and nothing is sent. You can change your mind any time in Settings.</p>
+  </div>
+
+  <section>
+    <h2>Who we are</h2>
+    <p>Desk Derby is developed by Raw Coder, Romania. For any question or request about your data, email <a href="mailto:rawcoder@icloud.com">rawcoder@icloud.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>Your settings (sound, vibration, left-handed controls, team size, bot level) and whether you have seen the tips are stored only on your device. They are never sent to us and are deleted when you remove the app.</p>
+  </section>
+
+  <section>
+    <h2>Game Center (online play and leaderboards)</h2>
+    <p>If you are signed in to Game Center, Apple provides the app with your Game Center player ID and nickname. They are used only to:</p>
+    <ul>
+      <li>find opponents and invite friends (Apple's matchmaking);</li>
+      <li>run the match: your moves are sent directly to the other players' devices through Game Center, and the other players see your nickname;</li>
+      <li>post your wins to the Desk Derby leaderboards, which other Game Center players can see.</li>
+    </ul>
+    <p>We do not run our own servers, so this data never reaches us. Game Center is operated by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. You can play against bots without Game Center, and you can sign out or hide your profile in iPhone Settings → Game Center.</p>
+  </section>
+
+  <section>
+    <h2>Anonymous statistics (only with your consent)</h2>
+    <p>On first launch the app asks if you want to help with anonymous statistics. Nothing is sent until you tap "Yes, I'll help". If you agree, the app sends:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>What</th><th>Example</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>A random install ID</td><td><code>3f2a…</code></td><td>to know that several matches come from the same install, without knowing who you are</td></tr>
+          <tr><td>Match events</td><td>match started or finished, 1v1 vs Pro bots, result 3–2, duration, left early</td><td>to balance the bots and the match length</td></tr>
+          <tr><td>Tips progress</td><td>reached "hold, then release", skipped the tips</td><td>to make the first match easier to learn</td></tr>
+          <tr><td>Online play</td><td>how long the search took, cancelled, fell back to bots, players found</td><td>to see if matchmaking works</td></tr>
+          <tr><td>Connection quality and errors</td><td>average ping 85 ms, seconds with a poor connection, a player left, error code GKErrorDomain:3</td><td>to find and fix network problems</td></tr>
+          <tr><td>App and device basics</td><td>version 1.0, iOS 26, iPhone, language "en", time to first frame</td><td>to find bugs on specific versions</td></tr>
+          <tr><td>Settings you change</td><td>sound off, left-handed controls on</td><td>to learn what bothers people</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We never send your Game Center nickname or player ID. We do not collect your name, email, phone number, contacts, photos, precise location or advertising identifier. We do not track you across other apps or websites, and we never sell data.</p>
+  </section>
+
+  <section>
+    <h2>Where the data goes</h2>
+    <p>Statistics are processed on our behalf by PostHog, an analytics service, on servers in the European Union, under a data processing agreement. PostHog technically receives your IP address when data is sent; it is not stored with the statistics and we do not use it to identify you.</p>
+  </section>
+
+  <section>
+    <h2>Legal basis and retention</h2>
+    <p>Statistics rely on your consent (GDPR art. 6(1)(a) and, for storing the install ID on your device, Romanian Law 506/2004 art. 4(5)). Data stored only on your device is strictly necessary for the app to work. Statistics are kept for at most 12 months, then deleted.</p>
+  </section>
+
+  <section>
+    <h2>Your choices and rights</h2>
+    <ul>
+      <li>Say no on first launch, or turn statistics off any time in <strong>Settings → Anonymous statistics</strong>. Turning it off deletes the random install ID from your device and stops all sending.</li>
+      <li>Ask us to see or delete the data sent from your install: email us the install ID shown in Settings.</li>
+      <li>If you are in the EU/EEA, you can complain to your data protection authority; ours is the Romanian ANSPDCP (<a href="https://www.dataprotection.ro" rel="noopener">dataprotection.ro</a>). Residents of other regions (for example California or the UK) have similar rights, and we honor them the same way.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Desk Derby is suitable for all ages and does not ask for age. If you are under 16, ask a parent before accepting statistics. Online play uses Game Center, whose features (such as playing with strangers) parents can limit in Screen Time → Content &amp; Privacy Restrictions → Game Center.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If anything changes (for example, if we ever add ads), we will update this page and the date above before the change reaches the app, and ask for your consent where it is needed.</p>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Found a bug or have an idea? Email <a href="mailto:rawcoder@icloud.com">rawcoder@icloud.com</a> with your device model and the app version. We usually reply within a few days.</p>
+    <ul>
+      <li><strong>Online doesn't find anyone:</strong> make sure you are signed in to Game Center (iPhone Settings → Game Center). If nobody is searching, tap "Play bots now" or invite a friend.</li>
+      <li><strong>The game feels laggy online:</strong> the badge in the top-left corner shows your connection. Green is good; red means a slow network.</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Raw Coder · Desk Derby</footer>
+</div>
+</body>
+</html>
