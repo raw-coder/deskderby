@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Desk Derby Trailer</title>
+<meta name="description" content="Desk Derby: tabletop soccer on your desk. Watch the trailer.">
+<meta property="og:title" content="Desk Derby · Trailer">
+<meta property="og:description" content="Tabletop soccer on your desk. 1v1 to 3v3, online with friends, every goal replayed.">
+<meta property="og:image" content="https://raw-coder.github.io/deskderby/trailer/poster-16x9.jpg">
+<style>
+  :root { --bg: #f4ecdb; --card: #fffaf0; --ink: #211c1a; --muted: #6b605a; --coral: #ee5c4d; --brass: #dba852; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #171310; --card: #241e1a; --ink: #faf2e0; --muted: #b3a89c; } }
+  :root[data-theme="dark"] { --bg: #171310; --card: #241e1a; --ink: #faf2e0; --muted: #b3a89c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-rounded, -apple-system, system-ui, sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 16px 56px; display: flex; flex-direction: column; gap: 28px; }
+  h1 { margin: 0; font-size: clamp(32px, 7vw, 52px); font-weight: 900; }
+  .bar { width: 72px; height: 7px; border-radius: 4px; background: var(--brass); margin-top: 8px; }
+  p { margin: 0; color: var(--muted); font-weight: 600; line-height: 1.45; }
+  .card { background: var(--card); border-radius: 22px; padding: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+  .card h2 { margin: 4px 6px 12px; font-size: 18px; font-weight: 800; }
+  video { width: 100%; display: block; border-radius: 14px; background: #000; }
+  .row { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  @media (min-width: 760px) { .row { grid-template-columns: 2fr 1fr; align-items: start; } }
+  .vertical video { max-height: 78vh; width: auto; max-width: 100%; margin: 0 auto; }
+  footer { color: var(--muted); font-size: 13px; }
+  a { color: var(--coral); font-weight: 700; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>Desk Derby</h1>
+    <div class="bar"></div>
+    <p style="margin-top:12px">Tabletop soccer on your desk: 1v1 to 3v3 against bots or online with friends, every goal replayed in slow motion. Coming soon to the App Store.</p>
+  </header>
+  <section class="row">
+    <div class="card">
+      <h2>Trailer · 30 s</h2>
+      <video controls playsinline preload="metadata" poster="poster-16x9.jpg" src="desk-derby-30s.mp4"></video>
+    </div>
+    <div class="card vertical">
+      <h2>Social cut · 15 s</h2>
+      <video controls playsinline preload="metadata" poster="poster-9x16.jpg" src="desk-derby-15s-vertical.mp4"></video>
+    </div>
+  </section>
+  <footer>Music: “Indie Sport” by AtlasAudio (Pixabay). <a href="../">Privacy &amp; support</a></footer>
+</main>
+</body>
+</html>
